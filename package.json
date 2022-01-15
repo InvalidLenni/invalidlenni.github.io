@@ -1,18 +1,22 @@
 {
-    "name": "invalidlenni.github.io",
-    "version": "1.0.0",
-    "description": "My personal website.",
-    "main": "./index.html",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/InvalidLenni/invalidlenni.github.io"
+    "name": "invalidlenni",
+    "version": "v1.0.0",
+    "description": "On the website can you find my projects, about me and more.",
+    "main": "./api/app.js",
+    "scripts": {
+        "api": "./api/app.js",
+        "web": "index.html"
     },
-    "keywords": [
-      "lenni",
-      "discord",
-      "dev"
-    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/InvalidLenni/invalidlenni.github.io"
+    },
     "author": "InvalidLenni",
-    "license": "MIT"
-  }
-  
+    "license": "MIT",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "nodemon": "^2.0.15"
+    }
+}
