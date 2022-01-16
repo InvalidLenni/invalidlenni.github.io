@@ -1,26 +1,46 @@
 {
-    "name": "InvalidLenni",
-    "description": "Lenni's Website",
-    "icons": [
-      {
-        "src": "https://imgur.com/EALJFA9",
-        "type": "image/png",
-        "sizes": "512x512"
-      },
-      {
-        "src": "https://imgur.com/aHJfNst",
-        "type": "image/png",
-        "sizes": "512x512"
-      },
-      {
-        "src": "https://imgur.com/qYoucYK",
-        "type": "image/png",
-        "sizes": "298x298"
-      }
-    ],
-    "start_url": "/",
-    "background_color": "#131b21",
-    "display": "standalone",
-    "scope": "/",
-    "theme_color": "#00d1b2"
-  }
+  "short_name": "Lenni",
+  "name": "InvalidLenni",
+  "icons": [
+    {
+      "src": "/assets/bot.png",
+      "type": "image/png",
+      "sizes": "2000x2000"
+    },
+    {
+      "src": "/assets/avatar.png",
+      "type": "image/png",
+      "sizes": "400x400"
+    },
+    {
+      "src": "/assets/brawlerstats_icon.jpg",
+      "type": "image/jpg",
+      "sizes": "700x700"
+    },
+    {
+      "src": "/assets/disweb.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/assets/gamerroom.webp",
+      "type": "image/webp",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/assets/lennidevplace.webp",
+      "type": "image/webp",
+      "sizes": "111x111"
+    },
+    {
+      "src": "/assets/favicon.png",
+      "type": "image/png",
+      "sizes": "400x400"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#3367D6",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#3367D6"
+}

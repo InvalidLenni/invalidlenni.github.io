@@ -47,18 +47,45 @@
             <a class="nav-link" href="#team-projects">Team projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="partners.html">Partners</a>
+            <a class="nav-link" href="pages/partners.html">Partners</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="linksdrop" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               Links
             </a>
+          <!---
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="linksdrop" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
-              Links
+              Subpages
             </a>
+            <ul class="dropdown-menu bgn" aria-labelledby="linksdrop">
+              <li><a class="dropdown-item text-muted font-weight-bold" href="#" target="_blank">Partners</a>
+              </li>
+              <li><a class="dropdown-item text-muted font-weight-bold" href="https://invalidlenni.blogspot.com/" target="_blank">My blog</a>
+              </li>
+              <li><a class="dropdown-item text-muted font-weight-bold" href="https://discord.gg/ntJEy5ADMu" target="_blank">Lenni's Development Place
+                  (Discord Server)</a></li>
+              <li>
+                <hr class="dropdown-divider" <a class="dropdown-divider-title" href="https://linktr.ee/lennii">My dev profiles (Idk the right name ig)</a>
+              </li>
+              <li><a class="dropdown-item text-muted font-weight-bold" href="https://github.com/InvalidLenni">Github</a></li>
+              <li><a class="dropdown-item text-muted font-weight-bold" href="https://stackoverflow.com/users/14937630/invalidlenni">Stackoverflow</a></li>
+              <li><a class="dropdown-item text-muted font-weight-bold" href="https://dev.to/invalidlenni">Dev.to</a></li>
+              <li>
+                <hr class="dropdown-divider" <a class="dropdown-divider-title" href="https://linktr.ee/lennii" target="_blank">Social Medias</a>
+              </li>
+              <li><a class="dropdown-item text-muted font-weight-bold" href="https://discord.com/users/814233207515643974">Discord</a></li>
+              <li>
+              <li><a class="dropdown-item text-muted font-weight-bold" href="https://twitter.com/invalidlenni">Twitter</a></li>
+              <li>
+              <li><a class="dropdown-item text-muted font-weight-bold" href="https://instagram.com/invalidlenni"
+                  target="_blank">Instagram</a></li>
+              <li><a class="dropdown-item text-muted font-weight-bold" href="https://twitch.tv/invalidlenni">Twitch</a></li>
+            </ul>
+          </li>
+        -->
             <ul class="dropdown-menu bgn" aria-labelledby="linksdrop">
               <li><a class="dropdown-item text-muted font-weight-bold" href="https://linktr.ee/lennii" target="_blank">Linktree</a>
               </li>
@@ -102,7 +129,7 @@
       My pronouns are He/Him and They/Them and i'm a LGBTQ+ activist.
     </p>
     <p class="lead ltext" style="color: rgb(0, 255, 21); opacity: 100%;">
-      Otherwise i'm a volunteer moderator, and i'm a security, DevOps, discord bot, front- and backend developer!
+      Otherwise i'm a volunteer moderator, white-hack hacker and a security, DevOps, discord bot, front- and backend developer!
     </p>
     <p class="lead ltext" style="color: rgb(0, 255, 21); opacity: 100%;">
       I'm a
@@ -284,6 +311,17 @@
       </div>
   </footer>
 
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+              navigator.serviceWorker.register('/sw.js')
+            })
+          }
+          window.addEventListener('beforeinstallprompt', (e) => {
+                  e.preventDefault()
+          })
+
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
       crossorigin="anonymous"></script>
