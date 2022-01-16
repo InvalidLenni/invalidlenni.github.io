@@ -48,7 +48,7 @@
               Links
             </a>
             <ul class="dropdown-menu bgn" aria-labelledby="linksdrop">
-              <li><a class="dropdown-item text-muted font-weight-bold" href="https://linktr.ee/lennii target="_blank">Linktree</a>
+              <li><a class="dropdown-item text-muted font-weight-bold" href="https://linktr.ee/lennii" target="_blank">Linktree</a>
               </li>
               <li><a class="dropdown-item text-muted font-weight-bold" href="https://medium.com/@InvalidLenni" target="_blank">My blog</a>
               </li>
@@ -161,7 +161,16 @@
           </div>
       </div>
   </footer>
-
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js')
+        })
+      }
+      window.addEventListener('beforeinstallprompt', (e) => {
+              e.preventDefault()
+      })
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
       crossorigin="anonymous"></script>
