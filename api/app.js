@@ -89,3 +89,15 @@ app.use(function (req, res, next) {
 
 
 app.listen(PORT, console.log(`invalidlenni.de-api is listing to`, PORT));
+
+
+// SW (ServiceWorker)
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js')
+    })
+  }
+  window.addEventListener('beforeinstallprompt', (e) => {
+          e.preventDefault()
+  })
+
