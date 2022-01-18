@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>502</title>
+  <link href="http://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet"><link rel="stylesheet" href="./css/502.css">
+
+</head>
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+        })
+      }
+      window.addEventListener('beforeinstallprompt', (e) => {
+              e.preventDefault()
+      })
+
+</script>
+<link href="http://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+<i class="material-icons">wifi_off</i>
+<div id="headingone">Oops, it's seems like you are offline. Please check your internet connection!</div>
