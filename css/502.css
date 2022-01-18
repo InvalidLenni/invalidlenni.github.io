@@ -1,0 +1,24 @@
+@import url(http://fonts.cdnfonts.com/css/gilroy-bold);
+@import url(//fonts.googleapis.com/icon?family=Material+Icons);
+body {
+	padding-top: 23px;
+	padding: 132px;
+	text-align: center;
+	font-family: 'Gilroy-Medium';
+	color: white;
+	background: #221a24;
+}
+
+#headingone {
+	font-family: Gilroy-Heavy;
+	font-size: 34px;
+}
+.material-icons {
+	text-align: center;
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 170px;
+	display: inline-block;
+	flex-direction: row;
+}
