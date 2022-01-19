@@ -1,24 +1,13 @@
- <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css'><link rel="stylesheet" href="./404.css">
-  <link rel="manifest" href="manifest.json">
-  <link rel="" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="icon" href="assets/favicon.png">
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@invalidlenni" />
-  <meta name="twitter:title" content="InvalidLenni" />
-  <meta name="twitter:description" content="On the website can you find my projects, about me and more." />
-  <meta name="twitter:image" content="https://invalidlenni.de/assets/favicon.png" />
-  <meta content="InvalidLenni.de" property="og:title" />
-  <meta content="On the website can you find my projects, about me and more!" property="og:description" />
-  <meta content="https://invalidlenni.de/" property="og:url" />
-  <meta content="assets/favicon.png" property="og:image" />
-  <meta content="#43B581" data-react-helmet="true" name="theme-color" />  
-  <title>InvalidLenni</title> 
+<!DOCTYPE html>
+<html lang="en" >
 <head>
+  <meta charset="UTF-8">
+  <title>404 Page</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css'><link rel="stylesheet" href="404.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
 <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In  -->
 <svg version="1.1"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
@@ -350,4 +339,20 @@ dtttt91222233Xbbbbfddtttt9122+3L2z8CDAAGA9CHeMiJOgAAAABJRU5ErkJggg==" transform=
   <h1>Oops, you broke the internet</h1>
   <p>Just kidding. But it seems Robo, your personal robot, can't find the page you're looking for. Please make sure you've entered the correct address, or return to <a href="https://invalidlenni.de/">home</a>.</p>
 </div>
+<!-- partial -->
 
+<script>
+if ('serviceWorker' in navigator) {
+	window.addEventListener('load', () => {
+	  navigator.serviceWorker.register('../sw.js')
+	})
+  }
+  window.addEventListener('beforeinstallprompt', (e) => {
+		  e.preventDefault()
+  })	
+</script>
+
+
+
+</body>
+</html>
