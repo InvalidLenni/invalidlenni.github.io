@@ -22,10 +22,12 @@
   <meta content="assets/favicon.png" property="og:image" />
   <meta content="#43B581" data-react-helmet="true" name="theme-color" />  
   <title>InvalidLenni</title> 
-
 </head>
 
 <body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid container">
       <a class="navbar-brand" href="https://invalidlenni.de/">
@@ -116,7 +118,7 @@
     </div>
   </nav>
   </div>
-
+  <div id="root"></div>
   <div class="jumbotron text-center bg-transparent">
     <h1 class="display-3 htext">Who am I?</h1>
     <p class="lead ltext" style="color: rgb(0, 255, 21); opacity: 100%;">
@@ -278,49 +280,44 @@
 </div>
 
 <div class="jumbotron text-center bg-transparent">
-  <section class="translator-list">
-    <div id="translator-projects">
-      <h2 class="translator-list" style="color: rgb(0, 116, 248); opacity: 100%;">
-
+  <section class="contributor-list">
+    <div id="team-projects">
+      <h2 class="contributor-list" style="color: blue; opacity: 100%;">
+      Translator for...
       </h2>
-      <br>
-      <br>
-      <button type="button" class="collapsible">Translator for...<span>if you want to know where I'm a translator...</span></button>
-      <div class="content">
-        <div class="content">
-          <div class="card-columns cardds">
-            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-              <div class="card-header text-center">
-                <img href="https://gearbot.rocks/" src="https://crowdin-static.downloads.crowdin.com/avatar/13732463/large/c05c039bfd2a196c90665a468e0f16f5.png" alt="GearBot Crowdin Icon" width="50" height="50" class="rounded-circle">
-              </div>    
-              <div class="card-body">
-                <p class="card-text" style="color:rgb(0, 17, 255)">Translator</p>
-                <p class="card-text">A discord bot for helping you to keep the gears turning smoothly. (<a href="https:https://discordapp.com/oauth2/authorize?client_id=349977940198555660&scope=bot&permissions=259191598326">Invite GearBot to your server.</a></p>
-              </div>
-              <!-- img alt="GearBot Crowdin Status Badge" src="https://placeholder.org/">-->
-            </div>
-
-      
-          <button type="button" class="collapsible">Translator for...<span>if you want to know where I'm a translator...</span></button>
-          <div class="card-columns cardds">
-            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-              <div class="card-header text-center">
-                <img href="https://premid.app/" src="https://crowdin-static.downloads.crowdin.com/images/project-logo/369101/small/d6fa0158b1f11740e53c8cbf875c8d64285.png" alt="PreMid App Icon" width="50" height="50" class="rounded-circle">PreMiD
-              </div>    
-              <div class="card-body">
-                <p class="card-text" style="color:rgb(0, 17, 255)">Translator</p>
-                <p class="card-text">PreMiD is a simple, configurable utility that allows you to show what you're doing on the web in your Discord now playing status.</p>
-              </div>
-              <!--<img alt="PreMiD Crowdin Status Badge" src="https://placeholder.org/">-->
-            </div>
-            </div>
+    </div>
+  </section>
+  <div class="card-columns cardds">
+    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+      <div class="card-header text-center">
+        <img href="https://premid.app/" src="https://crowdin-static.downloads.crowdin.com/images/project-logo/369101/small/d6fa0158b1f11740e53c8cbf875c8d64285.png" alt="PreMid App Icon" width="50" height="50" class="rounded-circle">PreMiD
+          </div>    
+            <div class="card-body">
+              <p class="card-text" style="color:rgb(0, 17, 255)">Translator</p>
+              <p class="card-text">PreMiD is a simple, configurable utility that allows you to show what you're doing on the web in your Discord now playing status.</p>
+          </div>
+        </div>
+          <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header text-center">
+              <img href="https://gearbot.rocks/" src="https://crowdin-static.downloads.crowdin.com/avatar/13732463/large/c05c039bfd2a196c90665a468e0f16f5.png" alt="GearBot Icon" width="50" height="50" class="rounded-circle">
+            </div>    
+            <div class="card-body">
+              <p class="card-text" style="color:rgb(0, 17, 255)">Translator</p>
+              <p class="card-text">A discord bot for helping you to keep the gears turning smoothly. (<a href="https:https://discordapp.com/oauth2/authorize?client_id=349977940198555660&scope=bot&permissions=259191598326">Invite GearBot to your server.</a></p>
+          </div>
+        </div>
+        <div>
+          <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header text-center">
+              <img href="https://minecraft.com/" src="https://crowdin-static.downloads.crowdin.com/images/project-logo/3579/small/ccc894f68f9276d6d5fce0866078dc51360.png" alt="Minecraft Icon" width="50" height="50" class="rounded-circle">
+            </div>    
+            <div class="card-body">
+              <p class="card-text" style="color:rgb(0, 17, 255)">Translator</p>
+              <p class="card-text">Minecraft, the best (open sandbox) game ever.</p>
           </div>
         </div>
       </div>
     </div>
-  </section>
-
-
   </div>
     <div class="bgseconde">
       <div class="float-right mr-5">
@@ -333,7 +330,7 @@
           <li><a href="https://instagram.com/invalidlenni" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
           <li><a href="https://www.youtube.com/channel/UC-1Bx2VQSxi6OeoHA5SJbxw" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
         </ul> 
-        <!--<img src="https://spotify-playing-invalidlenni.vercel.app/api/now-playing" width="540" height="52">-->
+        <img src="https://spotify-github-profile.vercel.app/api/view?uid=78buic09azh0aghqtt410l1s4&cover_image=true&theme=natemoo-re&bar_color=53b14f&bar_color_cover=false">
         <div style="transform: none;"><a href="https://discord.invalidlenni.de/" target="_blank"> <button class="add_to_discord" h><svg width="30"
                 height="35" viewBox="0 0 30 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
