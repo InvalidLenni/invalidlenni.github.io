@@ -51,6 +51,10 @@ line-height: 1.2;
 margin-top: 30px !important;
 padding: 60px 50px !important;
 }
+.card:img {
+ margin: 0 auto;
+}
+
 .bgseconde {
     padding-bottom: 150px;
     background-color: #131b21;
