@@ -1,3 +1,4 @@
+https://img.shields.io/website?down_color=red&down_message=Offline&style=for-the-badge&up_color=green&up_message=Online&url=https%3A%2F%2Finvalidlenni.de%2F
 # InvalidLenni.de
 
 This is the source code of [my website](https://invalidlenni.de/)
@@ -22,11 +23,3 @@ FAQ.
 
 
 
-## Have you projects? 
-Yeah, i have **many** projects, list of the projects:
-- https://www.lixoja.xyz/ 
-- https://github.com/diswebsite/ 
-- https://inv.wtf/germany 
-- https://github.com/AntiScamBot/backend 
-- https://discord.gg/ntJEy5ADMu 
-and I have soon™ more projects maybe when I have time (currently not many time due school unfortunately!) 
