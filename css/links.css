@@ -56,3 +56,30 @@ body {
 color: #fff!important;
 background-color: rgba(156, 39, 176, 0.6) !important;
 }
+
+.mastfoot.mb-auto{
+    padding-bottom: 40px;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: #212529;
+    color: white;
+}
+
+::-webkit-scrollbar {
+	width: 12.2px;
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 1000px #38383b; 
+}
+
+::-webkit-scrollbar-thumb {
+	background: #202225; 
+	border-radius: 4px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(84, 81, 81); 
+  }
