@@ -1,4 +1,5 @@
-# Add 'root' label to any root file changes root: 
+# Add 'root' label to any root file changes 
+root: 
 - '*' 
 
 # Workflow changes 
