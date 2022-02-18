@@ -12,10 +12,9 @@
   <link rel="icon" href="assets/favicon.png">
   <!-- Import Icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css" integrity="sha512-8Vtie9oRR62i7vkmVUISvuwOeipGv8Jd+Sur/ORKDD5JiLgTGeBSkI3ISOhc730VGvA5VVQPwKIKlmi+zMZ71w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/css/font-awesome.min.css">
-  <!-- Import manifest.json -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css" integrity="sha512-6/gTF62BJ06BajySRzTm7i8N2ZZ6StspU9uVWDdoBiuuNu5rs1a8VwiJ7skCz2BcvhpipLKfFerXkuzs+npeKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css" integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <!-- Import manifest.json -->
   <link rel="manifest" href="manifest.json">
   <!-- Make twitter:... embed -->
   <meta name="twitter:card" content="summary" />
@@ -59,6 +58,23 @@
           <li class="nav-item">
             <a class="nav-link" href="https://invalidlenni.de/pages/links.html"><i class="fa fa-link"></i> My linkpage</a>
             <!-- <span class="fa fa-link"></span>-->            
+          </li>
+          <br>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="linksdrop" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fa-solid fa-layer-group"></i> My stack
+            </a>
+            <ul class="dropdown-menu bgn" aria-labelledby="linksdrop">
+              <li><a class="dropdown-item text-muted font-weight-bold" href="#my-projects"><i class="fa fa-external-link" aria-hidden="true"></i> My projects are...</a>
+              </li>
+              <li><a class="dropdown-item text-muted font-weight-bold" href="#staff-at"><i class="fa fa-external-link" aria-hidden="true"></i> I'm staff at...</a>
+              </li>
+              <li><a class="dropdown-item text-muted font-weight-bold" href="#contributor-at"><i class="fa fa-external-link" aria-hidden="true"></i> I contribute to...</a></li>
+              <li><a class="dropdown-item text-muted font-weight-bold" href="#translator-at"><i class="fa fa-external-link" aria-hidden="true"></i> I'm translator for...
+                  (Discord Server)</a>
+              </li>
+            </ul>
           </li>
           <br>
           <li class="nav-item dropdown">
@@ -271,6 +287,7 @@
       </div>
     </div>
   </div>
+  <a class="twitter-timeline" data-width="220" data-height="299" data-theme="dark" href="https://twitter.com/invalidlenni?ref_src=twsrc%5Etfw">Tweets by invalidlenni</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <div class="bgseconde">
       <div class="float-right mr-5">
         <ul class="social-icons">
@@ -294,35 +311,7 @@
       </div>
     </div>
     <br>
-    <hr>
-    <hr>
-    <label for="check">
-      <input type="checkbox" class="check"/>
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-    <script>
-      /* When the user clicks on the button, 
-      toggle between hiding and showing the dropdown content */
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-      
-      // Close the dropdown if the user clicks outside of it
-      window.onclick = function(event) {
-        if (!event.target.matches('.check')) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
-          }
-        }
-      }
-      </script>
+    <br>
     <footer class="mastfoot mb-auto">
       <div class="container-fluid mb-auto">
           <div class="react_footer">
@@ -336,7 +325,7 @@
       </div>
     </div>
     </footer>
-
+    <div id="react_footer"/>
   
   <!-- dribbble -->
     <script>
@@ -357,11 +346,11 @@
     <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../scripts/main.js"></script>
-    <script src="../scripts/sw.js"></script>
-    <script src="/Components/Footer.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/sw.js"></script>
+    <script src="Components/Footer.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <script src="../scripts/debug.js"></script>
+    <script src="scripts/debug.js"></script>
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
 </body>
