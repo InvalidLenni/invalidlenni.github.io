@@ -13,6 +13,8 @@
   <!-- Import Icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/css/font-awesome.min.css">
   <!-- Import manifest.json -->
   <link rel="manifest" href="manifest.json">
   <!-- Make twitter:... embed -->
@@ -62,29 +64,17 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="linksdrop" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
-              Links
+              <i class="fa fa-link"></i> Links
             </a>
             <ul class="dropdown-menu bgn" aria-labelledby="linksdrop">
-              <li><a class="dropdown-item text-muted font-weight-bold" href="https://invalidlenni.de/pages/links.html" target="_blank">My linksite</a>
+              <li><a class="dropdown-item text-muted font-weight-bold" href="./links.html" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> Linksite</a>
               </li>
-              <li>
-                <hr class="dropdown-divider" <a class="dropdown-divider-title">I'm most active on...</a>
+              <li><a class="dropdown-item text-muted font-weight-bold" href="https://blog.invalidlenni.de/" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> My blog</a>
               </li>
-              <li><a class="dropdown-item text-muted font-weight-bold" href="https://discord.gg/ntJEy5ADMu" target="_blank">Lenni's Development Place
-                  (Discord Server)</a></li>
-              <li><a class="dropdown-item text-muted font-weight-bold" href="https://github.com/InvalidLenni">Github</a></li>
-              <li><a class="dropdown-item text-muted font-weight-bold" href="https://stackoverflow.com/users/14937630/invalidlenni">Stackoverflow</a></li>
-              <li><a class="dropdown-item text-muted font-weight-bold" href="https://dev.to/invalidlenni">Dev.to</a></li>
-              <li>
-                <hr class="dropdown-divider" <a class="dropdown-divider-title" href="https://linktr.ee/lennii" target="_blank">Social Medias</a>
+              <li><a class="dropdown-item text-muted font-weight-bold" href="https://dev.to/invalidlenni"><i class="fa fa-external-link" aria-hidden="true"></i> My DEV Blog</a></li>
+              <li><a class="dropdown-item text-muted font-weight-bold" href="https://discord.gg/ntJEy5ADMu" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> Lenni's Development Place
+                  (Discord Server)</a>
               </li>
-              <li><a class="dropdown-item text-muted font-weight-bold" href="https://discord.com/users/814233207515643974">Discord</a></li>
-              <li>
-              <li><a class="dropdown-item text-muted font-weight-bold" href="https://twitter.com/invalidlenni">Twitter</a></li>
-              <li>
-              <li><a class="dropdown-item text-muted font-weight-bold" href="https://instagram.com/invalidlenni"
-                  target="_blank">Instagram</a></li>
-              <li><a class="dropdown-item text-muted font-weight-bold" href="https://twitch.tv/invalidlenni">Twitch</a></li>
             </ul>
           </li>
         </ul>
@@ -112,7 +102,7 @@
     <a href="https://twitch.tv/invalidlenni" class="lead ltext" style="color: rgb(0, 38, 255); opacity: 100%;">Streamer</a></p>
     <p class="lead ltext" style="color: rgb(0, 255, 21); opacity: 100%;">
       Nice to meet ya!
-    </p>
+    </p>  
   <section>
     <div id="projects"><h2 class="projects ltext" style="color: rgb(0, 179, 255); opacity: 100%;">
       My projects are...</div>
@@ -292,7 +282,7 @@
           <li><a href="https://github.com/InvalidLenni" class="social-icon"> <i class="fa fa-github"></i></a></li>
           <li><a href="https://instagram.com/invalidlenni" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
           <li><a href="https://steamcommunity.com/id/InvalidLenni/" class="social-icon"> <i class="fa fa-steam"></i></a></li>
-          <li><a href="https://dev.to/InvalidLenni" class="social-icon"> <i class="fab fa-dev"></i></a></li>
+          <li><a href="https://dev.to/InvalidLenni" class="social-icon"> <i class="fa-brands fa-dev"></i></a></li>
           <li><a href="https://www.youtube.com/channel/UC-1Bx2VQSxi6OeoHA5SJbxw" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
         </ul> 
         <div style="transform: none;"><a href="https://discord.gg/ntJEy5ADMu" target="_blank"> <button class="add_to_discord" h><svg width="30"
@@ -335,7 +325,7 @@
       </script>
     <footer class="mastfoot mb-auto">
       <div class="container-fluid mb-auto">
-          <div class="">
+          <div class="react_footer">
               <div class="">    
                 <p style="position:static; text-align: center; padding-bottom: 10%; font-size: 19px; margin: 0px; padding: 0px;"><a href="https://invalidlenni.de/"
                           style="text-decoration: none; color: white;">Made with 💖 by</a></br>InvalidLenni ©
@@ -349,7 +339,6 @@
 
   
   <!-- dribbble -->
-    <a class="dribbble" href="https://dribbble.com/shots/6350574-Hamburger-switch-animation" target="_blank"><img src="https://cdn.dribbble.com/assets/dribbble-ball-mark-2bd45f09c2fb58dbbfb44766d5d1d07c5a12972d602ef8b32204d28fa3dda554.svg" alt=""></a>
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
@@ -364,10 +353,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
       crossorigin="anonymous"></script>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../scripts/main.js"></script>
     <script src="../scripts/sw.js"></script>
+    <script src="/Components/Footer.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <script src="../scripts/debug.js"></script>
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
