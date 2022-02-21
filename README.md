@@ -1,5 +1,5 @@
 ![Status](https://img.shields.io/website?down_color=red&down_message=Offline&style=for-the-badge&up_color=green&up_message=Online&url=https%3A%2F%2Finvalidlenni.de%2F)
-![GitHub package.json version](https://img.shields.io/github/package-json/v/InvalidLenni/invalidlenni.github.io?logo=github)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/InvalidLenni/invalidlenni.github.io?logo=github&style=for-the-badge)
 # InvalidLenni.de
 
 This is the source code of [my website](https://invalidlenni.de/)
