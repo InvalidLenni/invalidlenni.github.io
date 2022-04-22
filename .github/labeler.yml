@@ -1,0 +1,16 @@
+# Add 'root' label to any root file changes 
+root: 
+- '*' 
+
+# Workflow changes 
+.github/workflows: 
+- .github/workflows/* 
+# Issue Templates Changes 
+.github/ISSUE_TEMPLATE: 
+- .github/ISSUE_TEMPLATE/*
+# Linkpage Changes 
+.pages/links.html: 
+- pages/links.html
+# Partnerpage Changes
+.pages/partners.html:
+- pages/partners.html 
