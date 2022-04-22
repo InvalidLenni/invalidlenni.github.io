@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/menu.css">
   <link rel="icon" href="assets/favicon.png">
+  <link rel="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
   <!-- Import Icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css" integrity="sha512-8Vtie9oRR62i7vkmVUISvuwOeipGv8Jd+Sur/ORKDD5JiLgTGeBSkI3ISOhc730VGvA5VVQPwKIKlmi+zMZ71w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -28,7 +29,6 @@
   <meta content="https://invalidlenni.de/" property="og:url" />
   <meta content="assets/favicon.png" property="og:image" />
   <meta content="#43B581" data-react-helmet="true" name="theme-color" />  
-  <meta name="robots" content="noindex" />
   <title>InvalidLenni</title> 
 </head>
 
@@ -57,6 +57,10 @@
           <br>
           <li class="nav-item">
             <a class="nav-link" href="https://invalidlenni.de/pages/links.html"><i class="fa fa-link"></i> My linkpage</a>
+            <!-- <span class="fa fa-link"></span>-->            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://invalidlenni.de/pages/birthday.html"><i class="fa-solid fa-cake-candles"></i> Birthday Timer</a>
             <!-- <span class="fa fa-link"></span>-->            
           </li>
           <br>
@@ -98,7 +102,11 @@
   </div>
   <div id="root"></div>
   <div class="jumbotron text-center bg-transparent">
-    <h1 class="display-3 htext">Who am I?</h1>
+    <div class="wrapper">
+      <div class="lenni">
+        <h3 class="display-3 htext">About me</h3>
+      </div>
+    </div>
     <p class="lead ltext" style="color: rgb(0, 255, 21); opacity: 100%;">
         hellow :3!
     </p>
@@ -109,7 +117,7 @@
       My pronouns are He/Him and They/Them and i'm a LGBTQ+ activist.
     </p>
     <p class="lead ltext" style="color: rgb(0, 255, 21); opacity: 100%;">
-      Otherwise i'm a volunteer moderator, white-hack hacker and a security, DevOps, discord bot, front- and backend developer!
+      Otherwise i'm a volunteer moderator, white-hat hacker and a security, DevOps, discord bot, front- and backend developer!
     </p>
     <p class="lead ltext" style="color: rgb(0, 255, 21); opacity: 100%;">
       I'm a
@@ -167,6 +175,26 @@
     </div>
   </div>
 
+  <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+    <div class="card-header text-center">
+        <img href="https://discord.com/api/oauth2/authorize?client_id=917018198237392926&permissions=274878286912&scope=bot%20applications.commands" src="./assets/brawlerstats_icon.jpg" alt="Bot Icon from the bsstats bot." width="50" height="50" class="rounded-circle"> BrawlerStats
+    </div>    
+    <div class="card-body">
+      <p class="card-text" style="color:cyan">Developer</p>
+    <p class="card-text">A bot their can show brawl stars stats from profiles and clubs.</p>
+  </div>
+</div> 
+
+  <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+    <div class="card-header text-center">
+        <img href="#" src="./assets/multiplex.png" alt="Minecraft Server Icon from Multiplex" width="50" height="50" class="rounded-circle"> Multiplex
+    </div>    
+    <div class="card-body">
+      <p class="card-text" style="color:rgb(255, 0, 0)">Owner</p>
+    <p class="card-text">A bot their can show brawl stars stats from profiles and clubs.</p>
+  </div>
+  </div> 
+
     <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
       <div class="card-header text-center">
           <img href="https://inv.wtf/germany" src="./assets/gamerroom.webp" alt="GamerRoom Icon" width="50" height="50" class="rounded-circle"> GamerRoom
@@ -191,13 +219,24 @@
 <div class="card-columns cardds">
   <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
     <div class="card-header text-center">
-      <img href="https://discord.com/invite/R7C5JUjeZG" src=https://cdn.discordapp.com/avatars/898936508512366602/7da88590bc32b9d5beded92aaed9a152.png?size=256" alt="Gaming Community Icon" width="50" height="50" class="rounded-circle"> Gaming Community
+      <img href="https://www.youtube.com/c/benzyYT" src="https://yt3.ggpht.com/ytc/AKedOLQycT0fqiAApc178SKYdeTl9_wmmw05GRJX7rBS=s88-c-k-c0x00ffffff-no-rj"" alt="benzy Icon" width="50" height="50" class="rounded-circle"> benzyYT
     </div>    
     <div class="card-body">
-      <p class="card-text" style="color:yellowgreen">Community Support</p>
-      <p class="card-text">Gaming Community is a german community server for everyone and everything (as long you keep the chat clean)!</p>
+      <p class="card-text" style="color:yellowgreen">Community Moderator</p>
+      <p class="card-text">Benzy is a small youtuber with 200+ subscribers.</p>
     </div>
-    <img alt="Gaming Community" src="https://img.shields.io/discord/831073014887088148?style=for-the-badge">
+    <img alt="YouTube Channel Subscribers - Benzy" src="https://img.shields.io/youtube/channel/subscribers/UCzaLg1hEQD1e709Mc-1VqDw?logo=youtube&style=for-the-badge">
+  </div>
+
+  <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+    <div class="card-header text-center">
+      <img href="https://norik.cloud/" src="./assets/nitromc.de.png" alt="NitroMC Icon" width="50" height="50" class="rounded-circle"> Norik.Cloud
+    </div>    
+    <div class="card-body">
+      <p class="card-text" style="color:yellowgreen">Staff</p>
+      <p class="card-text">Norik.cloud is a free <b>minecraft hoster.</b>.</p>
+      <a href="https://invalidlenni.de/pages/partners.html">We're partnered with <b>NorikCloud</b></a>
+    </div>
   </div>
 
   <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
@@ -262,8 +301,6 @@
 
   <div class="bgseconde">
     <div class="float-left mr-5">
-      <a class="twitter-timeline" data-width="180" data-height="200" data-theme="dark" href="https://twitter.com/invalidlenni?ref_src=twsrc%5Etfw">Tweets by invalidlenni</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
-      <br>
       <img src="https://spotify-github-profile.vercel.app/api/view?uid=78buic09azh0aghqtt410l1s4&cover_image=true&theme=natemoo-re&bar_color=53b14f&bar_color_cover=false">  
     </div>
   </div>
@@ -321,14 +358,16 @@
       crossorigin="anonymous"></script>
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scripts/main.js"></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <script src="sw.js"></script>
+    <script src="scripts/typewriters.js"></script>
+    <script src="css/typewriters.css"></script>
     <script src="Components/Footer.jsx"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <script src="scripts/debug.js"></script>
+    <script src="https://publisher.linkvertise.com/cdn/linkvertise.js"></script><script>linkvertise(443973, {whitelist: ["dev.to","discord.gg","twitter.com","steamcommunity","youtube.com","instagram.com"], blacklist: []});</script>
 </body>
 
 </html>
