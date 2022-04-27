@@ -4,33 +4,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="../css/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="manifest" href="../manifest.json">
-  <link rel="" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Import CSS and Assets -->
+  <link rel="stylesheet" href="../css/icons.css"> 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+  <!-- Import Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css" integrity="sha512-8Vtie9oRR62i7vkmVUISvuwOeipGv8Jd+Sur/ORKDD5JiLgTGeBSkI3ISOhc730VGvA5VVQPwKIKlmi+zMZ71w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/font-awesome.min.css">
-  <link rel="icon" href="../assets/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css" integrity="sha512-6/gTF62BJ06BajySRzTm7i8N2ZZ6StspU9uVWDdoBiuuNu5rs1a8VwiJ7skCz2BcvhpipLKfFerXkuzs+npeKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css" integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <!-- Import manifest.json -->
+  <link rel="manifest" href="manifest.json">
+  <!-- Make twitter:... embed -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@invalidlenni" />
   <meta name="twitter:title" content="InvalidLenni" />
-  <meta name="twitter:description" content="The partners of InvalidLenni.de" />
+  <meta name="twitter:description" content="On the website can you find my projects, about me and more." />
   <meta name="twitter:image" content="https://invalidlenni.de/assets/favicon.png" />
+  <!-- Make og:... embed -->
   <meta content="InvalidLenni.de" property="og:title" />
-  <meta content="The partners of invalidlenni.de" property="og:description" />
-  <meta content="https://www.invalidlenni.de/" property="og:url" />
+  <meta content="On the website can you find my projects, about me and more!" property="og:description" />
+  <meta content="https://invalidlenni.de/" property="og:url" />
   <meta content="assets/favicon.png" property="og:image" />
   <meta content="#43B581" data-react-helmet="true" name="theme-color" />  
-  <meta name="description" content="The Partners of invalidlenni.de">
-  <meta name="title" content="InvalidLenni.de - Partners">
   <title>InvalidLenni</title> 
-
 </head>
 
 <body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="https://invalidlenni.de/">
         <img src="../assets/avatar.png" alt="" width="50" height="50" class="rounded-circle"> &nbsp; <span>InvalidLenni</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -40,15 +48,20 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="../index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+            <a class="nav-link" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+            <!-- <span class="fa fa-home"></span>-->            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/partners.html"><i class="fa fa-handshake-o"></i> Partners</a>
           </li>
           <br>
           <li class="nav-item">
-            <a class="nav-link" href="./pages/contact.php"><i class="fa-solid fa-messages"></i> Contact</a>
+            <a class="nav-link" href="https://invalidlenni.de/pages/links.html"><i class="fa fa-link"></i> My linkpage</a>
+            <!-- <span class="fa fa-link"></span>-->            
           </li>
-          <br>
           <li class="nav-item">
             <a class="nav-link" href="https://invalidlenni.de/pages/birthday.html"><i class="fa-solid fa-cake-candles"></i> Birthday Timer</a>
+            <!-- <span class="fa fa-link"></span>-->            
           </li>
           <br>
           <li class="nav-item dropdown">
@@ -72,56 +85,28 @@
     </div>
   </nav>
   </div>
-
+  <div id="root"></div>
   <div class="jumbotron text-center bg-transparent">
-  <section>
-    <div id="partner-list"><h2 class="projects ltext" style="color: rgb(0, 179, 255); opacity: 100%;">
-      <strong>The partners</strong></div>
-    </h2>
-  </section>
-
-  <div class="card-columns cardds">
-    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-      <div class="card-header text-center">
-          <img href="https://www.lixoja.xyz/invite" src="../assets/bot.png" alt="Bot Icon from the best bot." width="50" height="50" class="rounded-circle">Lixoja
-      </div>
-      <div class="card-body">
-        <p class="card-text" style="color:rgb(68, 0, 255)">Discord Bot</p>
-        <p class="card-text">Lixoja is a multi-propose and multi-languages discord bot!</p>
-      </div>
+    <?php
+    if(isset($_POST["submit"])){
+      mail("invalidlennii@gmail.com", "Kontaktformular", 'Name: '.$_POST["name"].', Email: '.$_POST["email"].' Priority: '.$_POST["priority"].' Nachricht: '.$_POST["message"]);
+      ?>
+      <h1 style="color: green;">The Email was send</h1>
+      <?php
+    }
+     ?>
+    <form action="index.php" method="post">
+      <input type="text" name="name" placeholder="Your Name" required><br>
+      <input type="email" name="email" placeholder="Email" required><br>
+      <select name="priority">
+        <option value="high">High</option>
+        <option value="middle">Middle</option>
+        <option value="low">Low</option>
+      </select><br>
+      <textarea name="message" rows="8" cols="80" required></textarea><br>
+      <button type="submit" name="submit">Send</button>
+    </form>
     </div>
-
-    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-      <div class="card-header text-center">
-          <img href="https://invalidlenni.gitbook.io/disweb" src="../assets/disweb.png" alt="Disweb Icon." width="50" height="50" class="rounded-circle">Disweb
-      </div>    
-      <div class="card-body">
-        <p class="card-text" style="color:cyan">API</p>
-        <p class="card-text">Disweb is a simple & easy2use API for obtaining information about a discord user, discord bot or discord guild and their use for some purpose on websites!</p>
-        <img alt="Disweb" src="https://img.shields.io/github/workflow/status/diswebsite/disweb/CodeQL?style=for-the-badge"> 
-    </div>
-  </div>
-
-    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-        <div class="card-header text-center">
-            <img href="https://www.norik.cloud/" src="https://cdn.discordapp.com/attachments/864140859099054141/931906968711479307/nitromc1.png" alt="NitroMC Server Icon." width="50" height="50" class="rounded-circle"><a href="https://www.norik.cloud/">Norik.Cloud</a>
-        </div>    
-        <div class="card-body">
-        <p class="card-text" style="color:rgb(2, 116, 36)">Minecraft Server</p>
-        <p class="card-text">A minecraft server hoster with high quality.</p>
-      </div>
-      <img alt="NitroMC" src="https://img.shields.io/badge/Shop-blue&?style=for-the-badge&logo=minecraft&logoColor=white&color=blue&label=NitroMC&logoColor=green&link=https://nitromc.de/store">
-    </div> 
-
-  <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-    <div class="card-header text-center">
-      <p class="rounded-circle" width="50" height="50">You want a partnership with invalidlenni.de?</p>
-    </div>    
-    <div class="card-body">
-      <p class="card-text">Contact me here:</p><a href="https://discord.com/users/814233207515643974">Lenni#0001</a>
-    </div>
-    </div>
-  </div>
 </div>
 
 
