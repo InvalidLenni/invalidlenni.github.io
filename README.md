@@ -20,6 +20,5 @@ FAQ.
 - https://github.com/InvalidLenni/invalidlenni.github.io/issues/new
 ### I found a security vulnerability, where can I report this?
 - Write an email to **[security@invalidlenni.de](mailto:security@invalidlenni.de/)**
-
-
-
+### The website is under maintaince, why?
+- I'm working on a new portfolio website, and I don't like the old website anymore. You can view the new portfolio here https://invalidlenni.netlify.app/, I will redirect to the new portfolio soon with the invalidlenni.de
